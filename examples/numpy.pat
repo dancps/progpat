@@ -10,4 +10,4 @@ np_a = np.array(a)
 print(a)
 
 %Shape
-print(a.shape)
+print(np_a.shape)
