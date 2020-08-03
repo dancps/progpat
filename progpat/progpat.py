@@ -9,9 +9,6 @@ import argparse
 # Handle no termcolor
 try:
     from termcolor import colored
-except ModuleNotFoundError:
-    def colored(a,*b,**c):
-        return str(a)
 except ImportError:
     def colored(a,*b,**c):
         return str(a)
