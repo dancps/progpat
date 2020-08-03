@@ -12,6 +12,9 @@ try:
 except ModuleNotFoundError:
     def colored(a,*b,**c):
         return str(a)
+except ImportError:
+    def colored(a,*b,**c):
+        return str(a)
 
 def calls(msg_type):
     if(msg_type=="warning"): return "["+colored("!","yellow")+"]"
