@@ -22,9 +22,9 @@ def calls(msg_type):
 class PatternManager(object):
     def __init__(self):
         self.__patterns=None#self.load_patterns() #list of dicts dict with "path":"o path", "pattern_name","patern_object":self.Pattern type
-        self.__main_pattern_path=os.path.realpath(os.path.join(os.path.dirname(__file__),"../patterns"))
+        self.__main_pattern_path=os.path.realpath(os.path.join(os.path.dirname(__file__),"./patterns"))
         self.__pattern_path=[self.__main_pattern_path]
-        self.__configs_path=os.path.realpath(os.path.join(os.path.dirname(__file__),"../.config"))
+        self.__configs_path=os.path.realpath(os.path.join(os.path.dirname(__file__),"./.config"))
         self.__config()
         self.__update_patterns()
 
